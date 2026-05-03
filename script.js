@@ -24,6 +24,7 @@ document.addEventListener('DOMContentLoaded', function() {
         menuLinks.forEach(link => {
             link.addEventListener('click', () => {
                 navLinks.classList.remove('active');
+                
                 const spans = mobileMenuToggle.querySelectorAll('span');
                 spans[0].style.transform = 'none';
                 spans[1].style.opacity = '1';
