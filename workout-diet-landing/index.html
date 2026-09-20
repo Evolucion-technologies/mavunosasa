@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Workout & Diet | Transform Your Life</title>
+    <meta name="description" content="Plan and maintain your workout routines while preparing perfect dietary meals with our comprehensive app.">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Outfit:wght@400;600;800;900&display=swap" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">
+                <span class="logo-icon">⚡</span>
+                <span class="logo-text">Fit<span class="highlight">Fuel</span></span>
+            </a>
+            
+            <div class="nav-links">
+                <a href="#features">Features</a>
+                <a href="#how-it-works">How It Works</a>
+                <a href="#testimonials">Testimonials</a>
+            </div>
+            
+            <a href="https://workout-diet.lovable.app" class="btn btn-primary nav-cta">Go to App</a>
+            
+            <!-- Mobile Menu Toggle -->
+            <button class="mobile-toggle" id="mobile-toggle" aria-label="Toggle menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu Overlay -->
+    <div class="mobile-menu" id="mobile-menu">
+        <a href="#features" class="mobile-link">Features</a>
+        <a href="#how-it-works" class="mobile-link">How It Works</a>
+        <a href="#testimonials" class="mobile-link">Testimonials</a>
+        <a href="https://workout-diet.lovable.app" class="btn btn-primary mobile-btn">Launch App</a>
+    </div>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="hero-glow"></div>
+        <div class="hero-content">
+            <div class="badge fade-up">Your Personal Trainer & Nutritionist</div>
+            <h1 class="hero-title fade-up delay-1">Transform Your Body, <br><span class="gradient-text">Fuel Your Life</span></h1>
+            <p class="hero-subtitle fade-up delay-2">Plan your ultimate workout routines and track your dietary meals all in one powerful, intuitive application.</p>
+            
+            <div class="hero-actions fade-up delay-3">
+                <a href="https://workout-diet.lovable.app" class="btn btn-large btn-primary glow-effect">
+                    Start Your Journey
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M5 12H19M19 12L12 5M19 12L12 19" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </a>
+                <a href="#features" class="btn btn-large btn-secondary">Explore Features</a>
+            </div>
+            
+            <div class="stats-row fade-up delay-4">
+                <div class="stat-item">
+                    <span class="stat-number">500+</span>
+                    <span class="stat-label">Workouts</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">10k+</span>
+                    <span class="stat-label">Recipes</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">1M+</span>
+                    <span class="stat-label">Active Users</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Features Section -->
+    <section class="features" id="features">
+        <div class="section-header reveal">
+            <h2 class="section-title">Everything You Need to <span class="highlight">Succeed</span></h2>
+            <p class="section-subtitle">Stop guessing. Start tracking. Our tools are designed to help you hit your macros and crush your PRs.</p>
+        </div>
+        
+        <div class="features-grid">
+            <!-- Feature 1 -->
+            <div class="feature-card reveal">
+                <div class="feature-icon box-1">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M6 18L18 6M18 6H8M18 6V16" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </div>
+                <h3 class="feature-title">Smart Workout Planning</h3>
+                <p class="feature-desc">Generate customized workout splits tailored to your goals, whether it's hypertrophy, strength, or endurance.</p>
+            </div>
+            
+            <!-- Feature 2 -->
+            <div class="feature-card reveal delay-1">
+                <div class="feature-icon box-2">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M12 6V12L16 14" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </div>
+                <h3 class="feature-title">Meal Preparation</h3>
+                <p class="feature-desc">Discover high-protein, delicious recipes. Automatically generate grocery lists based on your weekly meal plan.</p>
+            </div>
+            
+            <!-- Feature 3 -->
+            <div class="feature-card reveal delay-2">
+                <div class="feature-icon box-3">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M22 12H18L15 21L9 3L6 12H2" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </div>
+                <h3 class="feature-title">Progress Analytics</h3>
+                <p class="feature-desc">Visualize your body transformation and strength gains with beautiful, easy-to-understand charts.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section class="how-it-works" id="how-it-works">
+        <div class="section-header reveal">
+            <h2 class="section-title">Your Path to <span class="highlight">Greatness</span></h2>
+            <p class="section-subtitle">Three simple steps to unlock your full potential.</p>
+        </div>
+        
+        <div class="steps-container">
+            <div class="step-line"></div>
+            
+            <div class="step reveal">
+                <div class="step-number">01</div>
+                <div class="step-content">
+                    <h3 class="step-title">Set Your Goals</h3>
+                    <p class="step-desc">Input your current stats, target weight, and fitness objectives. Our algorithm calculates your ideal caloric intake and macros.</p>
+                </div>
+            </div>
+            
+            <div class="step reveal delay-1">
+                <div class="step-number">02</div>
+                <div class="step-content">
+                    <h3 class="step-title">Follow the Plan</h3>
+                    <p class="step-desc">Access your daily workout routines and meal plans directly from your dashboard. Log your sets, reps, and meals effortlessly.</p>
+                </div>
+            </div>
+            
+            <div class="step reveal delay-2">
+                <div class="step-number">03</div>
+                <div class="step-content">
+                    <h3 class="step-title">See Results</h3>
+                    <p class="step-desc">Watch your progress graph climb as you consistently hit your targets. Adjust your plan as you grow stronger.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="cta-section reveal">
+        <div class="cta-container">
+            <div class="cta-glow"></div>
+            <h2 class="cta-title">Ready to crush your goals?</h2>
+            <p class="cta-subtitle">Join thousands of others who have transformed their lives with our platform.</p>
+            <a href="https://workout-diet.lovable.app" class="btn btn-large btn-primary glow-effect">Launch Application</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-brand">
+                <a href="#" class="logo">
+                    <span class="logo-icon">⚡</span>
+                    <span class="logo-text">Fit<span class="highlight">Fuel</span></span>
+                </a>
+                <p class="footer-desc">Your ultimate companion for workout planning and dietary management.</p>
+            </div>
+            <div class="footer-links">
+                <div class="link-group">
+                    <h4>Product</h4>
+                    <a href="#features">Features</a>
+                    <a href="#how-it-works">How It Works</a>
+                    <a href="https://workout-diet.lovable.app">Web App</a>
+                </div>
+                <div class="link-group">
+                    <h4>Legal</h4>
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 FitFuel (Workout & Diet). All rights reserved.</p>
+            <div class="github-link">
+                <a href="https://github.com/KelvinJK/workout-diet" target="_blank" rel="noopener noreferrer">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017C2 16.441 4.868 20.193 8.838 21.503C9.338 21.594 9.52 21.286 9.52 21.022C9.52 20.785 9.511 20.165 9.506 19.335C6.726 19.938 6.14 17.994 6.14 17.994C5.685 16.838 5.029 16.531 5.029 16.531C4.12 15.91 5.097 15.922 5.097 15.922C6.104 15.993 6.634 16.958 6.634 16.958C7.528 18.49 8.977 18.046 9.539 17.785C9.629 17.15 9.882 16.706 10.163 16.452C7.946 16.2 5.617 15.344 5.617 11.488C5.617 10.388 6.01 9.488 6.643 8.777C6.541 8.525 6.195 7.498 6.741 6.108C6.741 6.108 7.577 5.84 9.501 7.143C10.296 6.921 11.147 6.811 11.992 6.807C12.837 6.811 13.688 6.921 14.484 7.143C16.406 5.84 17.24 6.108 17.24 6.108C17.788 7.498 17.443 8.525 17.341 8.777C17.976 9.488 18.367 10.388 18.367 11.488C18.367 15.355 16.035 16.198 13.811 16.447C14.166 16.753 14.484 17.359 14.484 18.291C14.484 19.625 14.472 20.698 14.472 21.022C14.472 21.289 14.652 21.6 15.157 21.501C19.125 20.19 22 16.441 22 12.017C22 6.484 17.523 2 12 2Z" />
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Custom Scripts -->
+    <script src="script.js"></script>
+</body>
+</html>
