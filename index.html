@@ -44,7 +44,9 @@
     <meta name="application-name" content="MavunoSasa">
     <meta name="apple-mobile-web-app-title" content="MavunoSasa">
 
+    <link rel="icon" type="image/png" href="favicon.png">
     <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="apple-touch-icon" href="favicon.png">
     <link rel="stylesheet" href="styles.css">
     <script>
         !function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.crossOrigin="anonymous",p.async=!0,p.src=s.api_host.replace(".i.posthog.com","-assets.i.posthog.com")+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="init capture register register_once unregister opt_in_capturing opt_out_capturing has_opted_in_capturing has_opted_out_capturing identify alias people.set people.set_once set_config reset get_config get_property getFeatureFlag getFeatureFlagPayload isFeatureEnabled onFeatureFlags reloadFeatureFlags updateEarlyAccessFeatureEnrollment getEarlyAccessFeatures on off onSessionId getSurveys getActiveMatchingSurveys renderSurvey canRenderSurvey getNextSurveyStep".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);
@@ -55,11 +57,26 @@ posthog.init('phc_oRwfTSQhKdg7NC0OcBK9sGKuRRZEzWfdS892rZ6GF62', {
     </script>
 </head>
 <body>
+    <!-- TMA Climate & El Niño Warning Banner -->
+    <aside class="el-nino-alert-bar" role="alert">
+        <div class="el-nino-alert-container">
+            <div class="el-nino-alert-text">
+                <span class="el-nino-badge">⚠️ TMA Alert</span>
+                <span><strong>El Niño Weather Advisory:</strong> Above-normal rainfall forecast across Tanzania. Protect your crops, prepare drainage furrows & secure harvests.</span>
+            </div>
+            <a href="https://app.mavunosasa.xyz" class="el-nino-action-btn">
+                View Farm Action Guide &rarr;
+            </a>
+        </div>
+    </aside>
+
     <!-- Navigation -->
     <nav class="navbar">
         <div class="container">
             <div class="nav-wrapper">
-                <a href="https://mavunosasa.xyz/" class="logo" aria-label="MavunoSasa - Home">MavunoSasa</a>
+                <a href="https://mavunosasa.xyz/" class="logo-link" aria-label="MavunoSasa - Home">
+                    <img src="images/mavuno-sasa-logo.png" alt="MavunoSasa Logo" class="brand-logo-img">
+                </a>
                 <button class="mobile-menu-toggle" aria-label="Toggle menu">
                     <span></span>
                     <span></span>
@@ -201,22 +218,32 @@ posthog.init('phc_oRwfTSQhKdg7NC0OcBK9sGKuRRZEzWfdS892rZ6GF62', {
                 <div class="service-card">
                     <div class="service-icon">🌱</div>
                     <h3>Agricultural Inputs Distribution</h3>
-                    <p>Quality seeds, fertilizers, and farming tools at affordable prices</p>
+                    <p>Quality certified seeds, fertilizers, and farming tools at affordable prices</p>
                 </div>
                 <div class="service-card">
                     <div class="service-icon">👨‍🏫</div>
                     <h3>Training & Capacity Building</h3>
-                    <p>Modern farming techniques and best practices training</p>
+                    <p>Modern agronomic playbooks, pest diagnostics, and best practice training</p>
                 </div>
                 <div class="service-card">
-                    <div class="service-icon">💰</div>
-                    <h3>Financial Services</h3>
-                    <p>Access to credit and savings products for farmers</p>
+                    <div class="service-icon">🌧️</div>
+                    <h3>TMA Climate & El Niño Advisory</h3>
+                    <p>Hyper-localized weather alerts, flood prevention, and seasonal agronomy planning</p>
                 </div>
                 <div class="service-card">
                     <div class="service-icon">🏪</div>
-                    <h3>Market Linkages</h3>
-                    <p>Connecting farmers directly to buyers and markets</p>
+                    <h3>Market Linkages & Pricing</h3>
+                    <p>Connecting farmers directly to buyers and live regional market price intelligence</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🌍</div>
+                    <h3>Export & Government Tenders</h3>
+                    <p>Step-by-step guidance on exporting via TPHPA/TBS and bidding on NeST/NFRA tenders</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">💰</div>
+                    <h3>Financial Services & Microloans</h3>
+                    <p>Flexible credit, crop insurance, and savings products tailored for smallholders</p>
                 </div>
             </div>
         </div>
@@ -860,7 +887,10 @@ posthog.init('phc_oRwfTSQhKdg7NC0OcBK9sGKuRRZEzWfdS892rZ6GF62', {
         <div class="container">
             <div class="footer-content">
                 <div class="footer-section">
-                    <h3>MavunoSasa</h3>
+                    <div class="footer-brand-badge" style="display: inline-flex; align-items: center; gap: 10px; background: rgba(255,255,255,0.09); padding: 8px 18px; border-radius: 9999px; margin-bottom: 1.25rem; border: 1px solid rgba(255,255,255,0.18);">
+                        <img src="images/mavuno-sasa-icon.png" alt="MavunoSasa Icon" style="height: 32px; width: 32px; object-fit: contain;">
+                        <span style="font-family: 'Sora', sans-serif; font-weight: 800; font-size: 1.25rem; color: #ffffff; letter-spacing: -0.02em;">Mavuno<span style="color: #E5A823;">Sasa</span></span>
+                    </div>
                     <p>Empowering farmers, transforming communities across Tanzania.</p>
                 </div>
                 <div class="footer-section">
